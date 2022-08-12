@@ -1,0 +1,22 @@
+
+<body bgcolor="purple">
+    <h2> Press The Button </h2>
+    <button onclick="myfunction()">CLICK ME</Button>
+    <p id="demo"> </p>
+    <script>
+    function myfunction(){
+    let text;
+    let person = prompt("Please enter your name:","Harry potter");
+    if(person == null || person=="")
+    {
+    text ="user cancelled the prompt";
+    }
+    
+    else{
+    text = "HELLO " + person + "GOOD Morning " + "Have a nice day";
+    }
+    document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    </body>
+    </html>
